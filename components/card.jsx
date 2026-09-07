@@ -1,11 +1,14 @@
-export default function Card({firstName, lastName, age}) {
-    return (
+export default function Card({ children, firstName, lastName, age}){
+
+    return(
         <>
-            <h1>
-            First Name: {firstName}
-            Last Name: {lastName}
-            age: {age}
-            </h1>
+        <div>
+            {/* //call children component... */}
+            {children}
+            First name: {firstName}, 
+            Last name: {lastName},
+            Age: {age}
+        </div>
         </>
-    )
+    );
 }
