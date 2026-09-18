@@ -1,24 +1,26 @@
-import './App.css'
-import Card from './components/card.jsx'
-const members = [
-  { name: 'Nazib', age: 21 },
-  { name: 'Karim', age: 20 },
-  { name: 'Rahim', age: 15 },
-];
+import Son from "./components/Son.jsx";
+import Daughter from "./components/Daughter.jsx";
+
 function App() {
   return (
-    <Card firstName="Nazib" lastName="Ul Alam" age={25}>
-    {/* //children get from Card component... */}
-    <h1>Welcome To the React world!</h1>
-  </Card>
-  {
-        members
-        .filter((item)=> item.age > 18)
-        .sort((a, b)=> a.age - b.age)
-        .map((member)=> (
-          <Card name={member.name} age={member.age} />
-        ))
-      }
-  )
+    <div>
+      <Son>
+        <h1>His has two sons!</h1>
+        <p>
+          This was written in the Parent component, but displayed as a part of
+          the Son component
+        </p>
+      </Son>
+
+      <Daughter type="Car" brand="BMW" className="bg-pink-300">
+        <h1>He his one Daughter!</h1>
+        <p>
+          This was written in the Parent component, but displayed as a part of
+          the Daughter component
+        </p>
+      </Daughter>
+    </div>
+  );
 }
-export default App
+
+export default App;
