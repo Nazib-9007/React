@@ -1,10 +1,10 @@
-import Car from "./component/Car"
-
+import Compo from "./component/Compo.jsx"
 function App() {
 
   return (
    <>
-   <Car />
+   <h1>Welcome to my app</h1>
+   <Compo />
    </>
   )
 }
