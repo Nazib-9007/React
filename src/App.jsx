@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 import Compo from "./component/Compo.jsx"
 // import Car from "./component/Car.jsx"
+=======
+// import Compo from "./component/Compo.jsx"
+// import Car from "./component/Car.jsx"
+import Conditional from "./component/Condition.jsx"
+>>>>>>> 9a35dbf23da4414236f492ce0b39c7889a6329f2
 
 function App() {
   const members = [
@@ -20,6 +26,7 @@ function App() {
       {/* <Compo /> */}
 
       {/* <Car
+<<<<<<< HEAD
         // brand="Audi"
         // obj="Car"
         // model="q10"
@@ -32,6 +39,17 @@ function App() {
             <Compo naam ={member.name} age={member.age} />
           ))
         }
+=======
+        brand="Audi"
+        obj="Car"
+        model="q10"
+        year={2025}
+        fuel={['Octen --', ' Diesel --', ' Pettrol']} {...carInfo}
+      /> */}
+
+        <Conditional name="John Doe" age={22} />
+        <Conditional name="Alice" age={15} />
+>>>>>>> 9a35dbf23da4414236f492ce0b39c7889a6329f2
 
     </>
   )
